@@ -1,0 +1,441 @@
+.detail-content-top .title-box{
+    margin: 100px 0 0;
+    width: 100%;
+    height: 46px;
+    line-height: 26px;
+}
+.detail-content-top .title{
+    display: block;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+    float: left;
+    font-size: 26px;
+}
+.detail-content-top .status-flag{
+    float: left;
+    display: block;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-left: 10px;
+    border-radius: 6px;
+    background: none;
+    width: auto;
+    height: auto;
+}
+.detail-content-top.raising .status-flag{
+    border: 1px solid #2da3dc;
+    color: #2da3dc;
+}
+.detail-content-top.super-raise .status-flag{
+    border: 1px solid #61d0c9;
+    color: #61d0c9;
+}
+.detail-content-top.raise-success .status-flag{
+    border: 1px solid #f89999;
+    color: #f89999;
+}
+.detail-content-top.preheating .status-flag{
+    border: 1px solid #81a2c2;
+    color: #81a2c2;
+}
+.detail-content-top .desc{
+    clear: both;
+    margin-top: 20px;
+    padding-right: 80px;
+    opacity: .8;
+    font-size: 12px;
+}
+.detail-content-top .label-box{
+    margin-top: 20px;
+}
+.detail-content-top .label-box .address, .detail-content-top .label-box .classify, .detail-content-top .label-box .links{
+    float: left;
+    white-space: nowrap;
+    padding: 0 20px 0 0;
+}
+.detail-content-top .label-box .address:before{
+    content: '';
+    padding: 7px;
+    background: url(../images/project-icon/detail-1.png) center center no-repeat;
+    background-size: contain;
+}
+.detail-content-top .label-box .classify:before{
+    content: '';
+    padding: 9px;
+    background: url(../images/project-icon/detail-2.png) center center no-repeat;
+    background-size: contain;
+}
+.detail-content-top .label-box .links:before{
+    position: absolute;
+    margin-left: -22px;
+    content: '';
+    padding: 9px;
+    background: url(../images/project-icon/link.png) center center no-repeat;
+    background-size: contain;
+
+}
+.detail-content-top .label-box .links{
+    margin-left: 22px;
+}
+.detail-content-top .label-box .links a{
+    display: block;
+    float: left;
+    width: 32px;
+    height: 20px;
+}
+.detail-content-top .label-box .links a.weixin .weixin-img{
+    margin: 30px 0 0 -40px;
+}
+.detail-content-top .share-box .weixin-img{
+    margin: 40px 0 0 -40px;
+}
+.detail-content-top .share-box .bds_weixin:hover  .weixin-img{
+    display: block;
+}
+.detail-content-top .label-box .links a.weixin .weixin-img{
+    margin: 30px 0 0 -40px;
+}
+.detail-content-top .label-box .links a.weixin{
+    background: url(../images/project-icon/weixin-2-white.png) center center no-repeat;
+    background-size: contain;
+}
+.detail-content-top .label-box .links a.weixin:hover .weixin-img{
+    display: block;
+}
+.detail-content-top .label-box .links a.weixin:hover{
+    background: url(../images/project-icon/weixin-2-green.png) center center no-repeat;
+    background-size: contain;
+}
+.detail-content-top .label-box .links a.sina{
+    background: url(../images/project-icon/sina-2-white.png) center center no-repeat;
+    background-size: contain;
+}
+.detail-content-top .label-box .links a.sina:hover{
+    background: url(../images/project-icon/sina-2-red.png) center center no-repeat;
+    background-size: contain;
+}
+#bdshare_weixin_qrcode_dialog{
+    height: 337px !important;
+}
+.detail-content-top .status-box{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #666;
+}
+.detail-content-top .desc-label{
+    opacity: .8;
+    font-size: 12px;
+}
+.detail-content-top .money-box{
+    margin-left: 80px;
+    text-align: center;
+}
+.detail-content-top .status-line-box{
+    float: left;
+}
+.detail-content-top .money{
+    line-height: 30px;
+    padding: 25px 0 0 0;
+    font-size: 12px;
+}
+.detail-content-top .money .num, .detail-content-top .line-desc .num{
+    font-size: 26px;
+}
+.detail-content-top.raising .money{
+    color: #2da3dc;
+}
+.detail-content-top.super-raise .money{
+    color: #61d0c9;
+}
+.detail-content-top.raise-success .money{
+    color: #f89999;
+}
+.detail-content-top.preheating .money{
+    color: #81a2c2;
+}
+.detail-content-top .target, .detail-content-top .target-span{
+    float: left;
+}
+.detail-content-top .target-span{
+    margin: 5px 20px;
+    width: 1px;
+    border-left: 1px solid #666;
+    height: 20px;
+}
+.detail-content-top .desc-box{
+    height: 30px;
+}
+.detail-content-top .target .num{
+    font-size: 16px
+}
+.detail-content-top .share-box{
+    margin: 20px 0 0 40px;
+    clear: both;
+    line-height: 40px;
+}
+.detail-content-top .like-box{
+    width: 36px;
+    height: 36px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.detail-content-top .like-box.unlike{
+    background: url(../images/project-icon/heart-1.png) center center no-repeat;
+    background-size: contain;
+    background-color: #ff7d69;
+}
+.detail-content-top .like-box.liked{
+    background: url(../images/project-icon/heart-2.png) center center no-repeat;
+    background-size: contain;
+    background-color: #ff7d69;
+}
+.detail-content .tab-content img{
+    max-width: 100%;
+}
+.detail-content .info-box{
+    padding: 20px;
+    border: 5px solid #eaf8fc;
+    margin-bottom: 20px;
+}
+.detail-content .info-box .lable{
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #495a6a;
+    border-bottom: 1px solid #ddd;
+    height: 33px;
+}
+.detail-content .info-box .lable span{
+    border-bottom: 3px solid #2da3dc;
+    display: block;
+    float: left;
+    padding-bottom: 7px;
+}
+.detail-content .info-box .info-detail{
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+}
+.detail-content .info-box .btn-box{
+    width: 230px;
+    margin: 0 auto;
+}
+.detail-content .info-box .btn{
+    line-height: 40px;
+    height: 40px;
+}
+.detail-content .issue-box .title-box{
+    padding: 20px 0 0;
+    color: #495a6a;
+    font-weight: bold;
+}
+.detail-content .issue-box .status-box{
+    color: #999;
+}
+.detail-content .issue-box .status-box > span:first-child{
+    padding: 0 10px 0 0;
+}
+.detail-content .issue-box .status-box span:before{
+    content: '';
+    background: url(../images/check.png) center center no-repeat;
+    background-size: cover;
+    padding: 0.5px 10px;
+    margin: 0 3px 0 0;
+}
+.detail-content .info-detail .num-box{
+    color: #2da3dc;
+    font-size: 12px;
+}
+.detail-content .info-detail .num-box .num{
+    font-size: 18px;
+    font-weight: bold;
+}
+.detail-content .info-detail .num-box .big-num{
+    font-size: 26px;
+}
+.detail-content .info-detail > .col-xs-6:first-child{
+    border-right: 1px solid #ddd;
+}
+.detail-content .info-detail .btn-box{
+    padding: 0 20px;
+}
+.detail-content .info-detail .btn-box .btn{
+    height: 40px;
+    line-height: 40px;
+}
+.detail-content .support-btn .desc{
+    padding-left: 34px;
+}
+.detail-content .support-btn .desc:before{
+    content: '';
+    padding: 2px 13px;
+    background: url(../images/project-icon/support-btn-icon.png) center center no-repeat;
+    background-size: cover;
+    margin-left: -34px;
+    margin-right: 8px;
+}
+.detail-content .box-line{
+    position: relative;
+    margin-top: 20px;
+}
+.detail-content .line-block{
+    margin-bottom: 10px;
+}
+.detail-content .line-content{
+    margin-left: 25px;
+}
+.detail-content .box-line:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 100%;
+    width: 1px;
+    background: #ccc;
+}
+.detail-content .box-line .line-point{
+    position: absolute;
+    margin-top: 4px;
+    left: 6.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #dcf4fb;
+    background: #2da3dc;
+}
+.detail-content .line-content .dynamic-title{
+    margin-bottom: 10px;
+    color: #495a6a;
+}
+.detail-content .line-content .dynamic-title .time{
+    color: #2da3dc;
+    padding-right: 10px;
+}
+.detail-content .line-content .dynamic-content{
+    color: #999;
+}
+.dynamic-box .edit-btn{
+    background: url(../images/project-icon/edit-on.png);
+    background-size: cover;
+    color: #2da3dc;
+    width: 50px;
+    height: 14px;
+    float: right;
+}
+.dynamic-box .edit-btn.editing{
+    background: url(../images/project-icon/edit-off.png);
+    background-size: cover;
+}
+.dynamic-box .delete-btn{
+    color: #fe8268;
+    float: right;
+    margin-right: 10px;
+}
+.dynamic-box .edit-box{
+    height: 24px;
+    line-height: 14px;
+}
+.dynamic-edit-box{
+    margin-top: 20px;
+    display: none;
+}
+.dynamic-edit-box .dynamic-edit-title{
+    margin-bottom: 10px;
+}
+.dynamic-edit-box .dynamic-edit-content{
+    resize: vertical;
+}
+.dynamic-edit-box .edit-box-btn{
+    margin: 20px 20px 0;
+    height: 40px;
+}
+.dynamic-edit-box .edit-box-btn .btn{
+    width: 100px;
+}
+.dynamic-edit-box .edit-box-btn .save{
+    float: left;
+}
+.dynamic-edit-box .edit-box-btn .cancel{
+    float: right;
+    background-color: #ccc;
+}
+.detail-content .dynamic-box .btn-box{
+    width: 150px;
+}
+.dynamic-box .no-content{
+    color: #999;
+    background: url(../images/no-content-bg.jpg) 10px 50% no-repeat;
+    text-align: left;
+    padding: 20px 0 20px 100px;
+}
+.dynamic-box .new-dynamic-btn{
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #2da3dc;
+    color: #2da3dc;
+}
+.detail-content .line-content .q{
+    color: #2da3dc;
+    margin-bottom: 10px;
+}
+.detail-content .line-content .a{
+    color: #999;
+}
+.invest-list-box ul > li{
+    float: left;
+    width: 370px;
+    height:110px;
+    margin: 0 20px 20px 0;
+    padding: 10px 20px;
+    background: #f3f3f3;
+}
+.invest-list-box ul > li.even{
+    margin-right: 0;
+}
+.invest-list-box .head-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+.invest-list-box .desc-box{
+    padding: 20px 0;
+    color: #666;
+    text-align: right;
+}
+.invest-list-box .desc-box .name, .invest-list-box .desc .lable{
+    font-size: 14px;
+    float: left;
+    padding: 0;
+}
+.invest-list-box .desc-box .time{
+    color: #999;
+    padding-left: 5px;
+}
+.invest-list-box .desc{
+    margin-top: 10px;
+}
+.invest-list-box .desc .money {
+    font-size: 12px;
+    font-weight: bold;
+}
+.invest-list-box .desc .money .num{
+    font-size:18px;
+    color: #2DA3DC;
+}
+.C-fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0px 1px 1px #ddd;
+}
+.C-support-fixed{
+    position: fixed;
+    width: 230px;
+    top: 12.5px;
+    z-index: 9;
+}

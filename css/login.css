@@ -1,0 +1,220 @@
+.register-login-box {
+    width: 402px;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 6px;
+    letter-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+.logout-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.register-login-box .login-head {
+    font-size: 20px;
+    color: #666;
+    padding: 30px 0 10px !important;
+    text-align: center;
+}
+
+.register-login-box .forgot-link {
+    float: right;
+}
+
+.register-login-box ul li {
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.register-login-box ul li:first-child {
+    border-top-left-radius: 6px;
+}
+
+.register-login-box ul li:last-child {
+    border-top-right-radius: 6px;
+}
+
+.register-login-box ul li a {
+    color: #000;
+}
+
+.register-login-box ul li a:hover {
+    background: #fff;
+}
+
+.register-login-box ul li.active {
+    border-bottom: 2px solid #2da3dc;
+}
+
+.register-login-box .row {
+    margin: 0;
+    padding: 20px 40px 0 40px;
+    text-align: left;
+}
+
+.register-login-box .form-control {
+    height: 40px;
+}
+
+.register-login-box .check-input {
+    padding-left: 0;
+    width: 220px;
+    padding-right: 10px;
+}
+
+.register-login-box .check-btn, .forgot-password-box .check-btn {
+    padding-right: 0;
+    width: 100px;
+}
+
+.register-login-box .check-btn .btn, .forgot-password-box .check-btn .btn , .fetch-code-btn {
+    height: 40px;
+    background: #ccc;
+    box-shadow: none;
+    border-radius: 4px;
+    width: 100%;
+    border: 1px #ccc solid;
+    color: #666;
+    font-size: 14px;
+    padding: 0;
+    line-height: 40px;
+}
+
+.register-login-box .check-btn .btn:hover {
+    opacity: .8;
+}
+
+.register-login-box .checkbox {
+    float: left;
+    margin-right: 5px;
+}
+
+button.checkbox {
+    width: 14px;
+    height: 14px;
+    background: url('');
+}
+
+.register-login-box a {
+    color: #2da3dc;
+}
+
+.register-login-box ul > li:first-child {
+    border-right: 1px #ddd solid;
+}
+
+.register-login-box .nav > li > a {
+    padding: 15px;
+    color: #aaa;
+}
+
+.register-login-box .nav > li {
+    background: #f5f5f5;
+}
+
+.register-login-box .nav > li.active {
+    background: #fff;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border: none;
+}
+
+.nav-tabs > li.active a:hover, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus, .nav-tabs > li > a:focus, .nav-tabs > li > a:link {
+    margin: 0;
+    border: 0;
+    color: #333;
+    background: none;
+}
+
+.register-login-box .bottom {
+    padding: 0px;
+    text-align: center;
+}
+
+.register-login-box .bottom a {
+    padding-left: 5px;
+}
+
+.register-login-box .bottom p {
+    padding: 20px;
+}
+
+.modal .modal-dialog {
+    width: 400px;
+    margin: 80px auto 0;
+}
+
+.modal .modal-dialog .word-num-show {
+    margin-top: -25px;
+    right: 20px;
+}
+
+.word-num-show .warning {
+    color: #fca2a2;
+}
+
+.word-num-show {
+    position: absolute;
+    color: #999;
+    font-size: 12px;
+}
+
+.modal-body {
+    padding: 0;
+    color: #333;
+}
+
+.modal .modal-header {
+    border: none;
+}
+
+.modal textarea {
+    width: 100%;
+    resize: none;
+    height: 125px;
+    padding: 10px;
+}
+
+.modal .modal-footer {
+    padding: 0px 90px 20px;
+    border: none;
+}
+
+.modal a.btn {
+    width: 100px;
+    font-size: 16px;
+    line-height: 40px;
+    height: 40px;
+}
+
+.modal .C-J-confirm {
+    float: left;
+}
+
+.modal .C-J-cancel {
+    float: right;
+    background: #6d6d6d;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal .modal-dialog {
+    width: 400px;
+    margin: 80px auto 0;
+}
+
+.modal .modal-dialog .C-word-num-show {
+    bottom: 20px;
+    right: 20px;
+}
+
+.modal .modal-body p {
+    text-align: center;
+    padding: 20px;
+}

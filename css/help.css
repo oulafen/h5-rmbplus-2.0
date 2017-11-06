@@ -1,0 +1,91 @@
+.help-content .center-title {
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.help-content fieldset {
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.help-content fieldset[data-type="slider"] {
+    height: 40px;
+    overflow: hidden
+}
+
+.help-content fieldset[data-type="slider"] legend:after {
+    content: '﹀';
+    color: #2da3dc;
+    float: right
+}
+
+.help-content fieldset[data-type="slider"] legend.up:after {
+    content: '︿'
+}
+
+.help-content legend {
+    border-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 40px
+}
+
+.help-box {
+    background-color: #fff
+}
+
+.help-box .nav-box {
+    float: left;
+    width: 250px;
+    margin-right: 30px;
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid #eaf8fc
+}
+
+.help-box .nav-box li {
+    float: none;
+    width: 100%;
+    text-align: left;
+    border-bottom: #ddd 1px solid;
+    padding: 10px 0 10px 30px;
+    font-size: 16px
+}
+
+.help-box .nav-box li a:hover {
+    background: none;
+    color: #2da3dc
+}
+
+.help-box .nav-box .nav-tabs, .help-box .nav-box .nav-tabs > li:last-child {
+    border-bottom: none
+}
+
+.help-box .nav-box li.active a {
+    background: none;
+    color: #2da3dc
+}
+
+.help-box .tab-content {
+    margin: 20px 0;
+    width: 820px;
+    float: left;
+    background: #fff;
+    padding: 20px;
+    border: 5px solid #eaf8fc
+}
+
+.help-content {
+    color: #666;
+    line-height: 2;
+    letter-spacing: 1px
+}
+
+.help-content b, .help-content strong {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+    color: #111
+}

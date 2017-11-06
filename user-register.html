@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--优先使用IE最新版和chrome-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!--百度禁止转码-->
+    <meta content="width=1024" name="viewport">  <!--非响应式-->
+    <title>18plus</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style2.0.css" rel="stylesheet"/>
+    <link href="css/login.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header header-white">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="publish-index.html">项目发布</a></li>
+                <li><a href="help-index.html">新手问答</a></li>
+            </ul>
+            <div id="user-panel">
+                <div class="navbar-right unlogin J-unlogin">
+                    <a href="user-register.html" class="register">注册</a>
+                    <span>|</span>
+                    <a href="user-login.html" class="login">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="container-box">
+    <div class="modal-body ">
+        <div class="register-login-box">
+            <ul class="nav nav-tabs" id="myRegisterTab">
+                <li class="active"><a href="#phone">手机注册</a></li>
+                <li><a href="#email">邮箱注册</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="phone">
+                    <div class="row">
+                        <input class="form-control J-phone" type="num" maxlength="11" id="phoneInput" placeholder="请输入手机号">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 check-input">
+                            <input class="form-control J-check-code" type="text" placeholder="输入验证码">
+                        </div>
+                        <div class="col-xs-4 check-btn">
+                            <input class="btn J-check-code-btn" type="button" value="获取验证码" data-page="phone-register" data-type="phone"
+                                   data-target="phoneInput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="form-control J-pwd" maxlength="16" type="password" placeholder="请输入至少6位密码">
+                        <div class="caps-lock-warning hide"></div>
+                    </div>
+                    <div class="row">
+                        <input class="form-control J-pwd-confir" maxlength="16" type="password"
+                               placeholder="请确认密码" >
+                        <div class="caps-lock-warning hide"></div>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" class="checkbox">
+                        我已阅读并同意
+                        <a href="#" target="_blank">《用户服务协议》</a>
+                    </div>
+                    <div class="error-box">
+                        请将信息填写完整
+                    </div>
+                    <div class="row">
+                        <button class="btn ">注册</button>
+                    </div>
+                    <div class="row bottom">
+                        <p>已有账号？<a href="user-login.html" onclick="return(dialog(this))">直接登录</a></p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="email">
+                    <div class="row">
+                        <input class="form-control J-email" type="email" placeholder="请输入邮箱地址"  id="emailInput">
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-8 check-input">
+                            <input class="form-control J-check-code" type="text" placeholder="输入验证码">
+                        </div>
+                        <div class="col-xs-4 check-btn">
+                            <input class="btn J-check-code-btn" type="button" value="获取验证码" data-page="email-register" data-type="email"
+                                   data-target="emailInput">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input class="form-control J-pwd" type="password" maxlength="16"  placeholder="请输入至少6位密码">
+                        <div class="caps-lock-warning hide"></div>
+                    </div>
+                    <div class="row">
+                        <input class="form-control J-pwd-confir" type="password" maxlength="16"  placeholder="请确认密码">
+                        <div class="caps-lock-warning hide"></div>
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" class="checkbox">
+                        我已阅读并同意
+                        <a href="{DIR}?c=help-128" target="_blank">《用户服务协议》</a>
+                    </div>
+                    <div class="error-box"></div>
+                    <div class="row">
+                        <button class="btn ">注册</button>
+                    </div>
+                    <div class="row bottom">
+                        <p>已有账号？<a href="user-login.html" onclick="return(dialog(this))">直接登录</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="alert-box J-alert"></div>
+    </div>
+</div>
+
+<footer>
+    <div id="back2top">
+        <a href="javascript:void(0);"></a>
+    </div>
+    <div class="footer-links">
+        <p>
+            <a href="help-index.html" target="_blank" class="link">帮助中心</a>
+            <a href="help-index.html" target="_blank" class="link">商务合作</a>
+            <a href="help-index.html" target="_blank" class="link">免责声明</a>
+            <a href="help-index.html" target="_blank" class="link">关于我们</a>
+        </p>
+    </div>
+
+    <div class="contact">
+        <p>
+            <span class="contact-weixin">
+                <span class="contact-icon weixin-icon"></span>
+                微信
+                <img class="weixin-img" src="images/foooter-weixin-img.jpg" alt="">
+            </span>
+            <span class="contact-phone">
+                <span class="contact-icon phone-icon"></span>
+                010-57199511
+            </span>
+            <span class="contact-email">
+                <span class="contact-icon email-icon"></span>
+                SERVICE@18PLUS.COM.CN
+            </span>
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright©2015北京无花果科技咨询有限公司 版权所有 京ICP备15048912号-1</p>
+    </div>
+</footer>
+<script>
+    $(function(){
+        $('#myRegisterTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    })
+</script>
+</body>
+</html>
+

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--优先使用IE最新版和chrome-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!--百度禁止转码-->
+    <meta content="width=1024" name="viewport">  <!--非响应式-->
+    <title>18plus</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/personal.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/style2.0.css" rel="stylesheet"/>
+    <link href="css/personal.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header header-white">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="publish-index.html">项目发布</a></li>
+                <li><a href="help-index.html">新手问答</a></li>
+            </ul>
+            <div id="user-panel">
+                <div class="navbar-right unlogin J-unlogin">
+                    <a href="user-register.html" class="register">注册</a>
+                    <span>|</span>
+                    <a href="user-login.html" class="login">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="detail-content-top personal-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-2">
+                <div class="icon-box">
+                    <img src="images/partner-icon/1.jpg" alt="">
+                    <div class="verified-box">
+                        <span>已认证</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-7 metas">
+                <p>
+                    <a href="javascript:void(0);" class="user">姜楠</a>
+                    <a href="javascript:void(0);" class="city">北京</a>
+                    <a href="javascript:void(0);" class="id">鑫缘资本 <span>|</span> 中国区合伙人</a>
+                </p>
+                <p>
+                    <a href="javascript:void(0);" class="area">
+                        <span>北京</span>
+                        <span>天津</span>
+                        <span>上海</span>
+                        <span>深圳</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="javascript:void(0);" class="field">
+                        <span>社交网络</span>
+                        <span>智能硬件</span>
+                        <span>工具软件</span>
+                    </a>
+                </p>
+            </div>
+            <div class="col-xs-3 fans-box">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="javascript:void(0);" class="J-focus-num-btn">
+                            <div class="f-l">
+                                <p class="num">24</p>
+                                <p>关注</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="javascript:void(0);">
+                            <div class="f-r">
+                                <p class="num">68</p>
+                                <p>粉丝</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row btn-box">
+                    <a href="javascript:void(0);" class="btn J-focus-btn">
+                        <span>关注</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal personal-modal J-personal-modal"  role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="focus-lists">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/1.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/2.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/2.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/1.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/3.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="icon">
+                                <img src="images/partner-icon/1.jpg" alt="">
+                            </div>
+                            <div class="desc">
+                                <p class="name">ladyzoo</p>
+                                <p class="position">鑫缘资本合伙人</p>
+                                <div class="btn-box">
+                                    <a href="javascript:void(0);" class="btn J-cancel-focus-btn">取消关注</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pages-box">
+                    <a href="#">上一页</a>
+                    <a href="#" class="current">1</a>
+                    <a href="#">2</a>
+                    <a href="#">下一页</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-box detail-tab-box J-tab-box">
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#investProject">投资的项目</a></li>
+            <li><a href="#financialProject">融资的项目</a></li>
+            <li><a href="#focusProject">关注的项目</a></li>
+        </ul>
+    </div>
+</div>
+<div class="detail-content J-detail-content">
+    <div class="container">
+        <div class="tab-content">
+            <div class="tab-pane active" id="investProject">
+                <div class="project-lists J-project-lists">
+                    <ul>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project1.jpg" alt="">
+                                <div class="desc-box raising J-project-list" data-status-line="35%" data-status-flag="raising">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="status-line J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        宝瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">240</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project2.jpg" alt="">
+                                <div class="desc-box raising J-project-list" data-status-line="50%" data-status-flag="raising">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝瑞宝瑞宝瑞宝瑞宝瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">0</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project3.jpg" alt="">
+                                <div class="desc-box raising J-project-list" data-status-line="75%" data-status-flag="preheating">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        瑞宝瑞宝瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技越科技越科技越包科技越包有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">0</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="financialProject">
+                <div class="project-lists J-project-lists">
+                    <ul>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project3.jpg" alt="">
+                                <div class="desc-box raising J-project-list" data-status-line="75%" data-status-flag="preheating">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        瑞宝瑞宝瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技越科技越科技越包科技越包有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">0</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project4.jpg" alt="">
+                                <div class="desc-box preheating J-project-list" data-status-line="0%" data-status-flag="preheating">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">预热中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        打造以车载对讲、行车咨询为核语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">0</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project5.jpg" alt="">
+                                <div class="desc-box super-raise J-project-list" data-status-line="135%" data-status-flag="super-raise">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">超募中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">340</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">16</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project1.jpg" alt="">
+                                <div class="desc-box raise-success J-project-list" data-status-line="265%" data-status-flag="raise-success">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹成功</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">500</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane" id="focusProject">
+                <div class="project-lists J-project-lists">
+                    <ul>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project5.jpg" alt="">
+                                <div class="desc-box super-raise J-project-list" data-status-line="135%" data-status-flag="super-raise">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">超募中</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝瑞宝瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">340</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">16</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                        <a href="project-index.html">
+                            <li>
+                                <img src="images/project1.jpg" alt="">
+                                <div class="desc-box raise-success J-project-list" data-status-line="265%" data-status-flag="raise-success">
+                                    <div class="status-flag-box">
+                                        <div class="status-flag">
+                                            <span class="flag-desc">众筹成功</span>
+                                        </div>
+                                    </div>
+                                    <div class="status-line-box">
+                                        <div class="J-status-line">
+                                            <p class="line-desc">
+                                                <span class="num"></span>%
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        车瑞宝
+                                    </div>
+                                    <p class="company">北京车越包科技有限公司</p>
+                                    <div class="desc">
+                                        聚合音乐、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、有声资讯订阅为基础的车载娱乐功能，打造以车载对讲、行车咨询为核心的车载智能语音互助社区。聚合音乐、有声资讯订阅为基础的车载娱乐功能。
+                                    </div>
+                                    <div class="row metas">
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">500</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                已筹集
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-label">￥</span><span class="num-content">300</span><span class="num-label">万</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                融资目标
+                                            </p>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="num">
+                                                <span class="num-content">7</span><span class="num-label">天</span>
+                                            </p>
+                                            <p class="meta-desc">
+                                                剩余时间
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="loading J-loading">
+    <div class="sk-fading-circle">
+        <div class="sk-circle1 sk-circle"></div>
+        <div class="sk-circle2 sk-circle"></div>
+        <div class="sk-circle3 sk-circle"></div>
+        <div class="sk-circle4 sk-circle"></div>
+        <div class="sk-circle5 sk-circle"></div>
+        <div class="sk-circle6 sk-circle"></div>
+        <div class="sk-circle7 sk-circle"></div>
+        <div class="sk-circle8 sk-circle"></div>
+        <div class="sk-circle9 sk-circle"></div>
+        <div class="sk-circle10 sk-circle"></div>
+        <div class="sk-circle11 sk-circle"></div>
+        <div class="sk-circle12 sk-circle"></div>
+    </div>
+</div>
+<div class="modal tip-modal fade" id="alertInfoModel">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body ">
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="back2top">
+        <a href="javascript:void(0);"></a>
+    </div>
+    <div class="footer-links">
+        <p>
+            <a href="help-index.html" target="_blank" class="link">帮助中心</a>
+            <a href="help-index.html" target="_blank" class="link">商务合作</a>
+            <a href="help-index.html" target="_blank" class="link">免责声明</a>
+            <a href="help-index.html" target="_blank" class="link">关于我们</a>
+        </p>
+    </div>
+
+    <div class="contact">
+        <p>
+            <span class="contact-weixin">
+                <span class="contact-icon weixin-icon"></span>
+                微信
+                <img class="weixin-img" src="images/foooter-weixin-img.jpg" alt="">
+            </span>
+            <span class="contact-phone">
+                <span class="contact-icon phone-icon"></span>
+                010-57199511
+            </span>
+            <span class="contact-email">
+                <span class="contact-icon email-icon"></span>
+                SERVICE@18PLUS.COM.CN
+            </span>
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright©2015北京无花果科技咨询有限公司 版权所有 京ICP备15048912号-1</p>
+    </div>
+</footer>
+</body>
+</html>

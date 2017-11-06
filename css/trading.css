@@ -1,0 +1,109 @@
+.trading-top-box{
+    background: url(../images/trading/top_bg.jpg) center center no-repeat;
+    height: 564px;
+    padding: 190px 0 0;
+}
+.trading-top-box h1{
+    text-align: center;
+    font-size: 60px;
+    color: #fff;
+    letter-spacing: 10px;
+}
+.trading-top-box .btn-box{
+    width: 230px;
+    margin-left: -115px;
+    position: absolute;
+    left: 50%;
+    top: 460px;
+}
+.trading-top-box .btn-box .btn{
+    border: 1px solid #fff;
+    background: none;
+    line-height: 60px;
+    height: 60px;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.trading-box-1{
+    background: url(../images/trading/mid_bg.jpg) center center no-repeat;
+    height: 389px;
+}
+.trading-lists{
+    margin: 30px auto 0;
+}
+.trading-list{
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px 30px;
+}
+.trading-list .title-box{
+    height: 53px;
+    line-height: 30px;
+}
+.trading-list .title-box .title{
+    float: left;
+    font-size: 20px;
+    border-bottom: 3px solid #2da3dc;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    color: #495a6a;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.trading-list .title-box .num{
+    float: left;
+    border: 1px solid #2da3dc;
+    padding: 0 20px;
+    border-radius: 5px;
+    color: #2da3dc;
+}
+.trading-list .metas-box .col-xs-10{
+    border-top: 2px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+.trading-list .metas-box .col-xs-2{
+    padding: 40px 0 0 20px;
+}
+.trading-list .metas-box ul{
+    margin: 0;
+    padding: 0;
+}
+.trading-list .metas-box ul li{
+    width: 20%;
+    list-style: none;
+    float: left;
+    border-right: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+}
+.trading-list .metas-box ul li:last-child{
+    border-right:none;
+}
+.trading-list .metas-box .meta-label{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.trading-list .metas-box .num{
+    font-size: 22px;
+    font-weight: bold;
+}
+.trading-list .metas-box .blue .num{
+    font-size: 28px;
+}
+.trading-list .assignor-box{
+    line-height: 50px;
+    padding: 20px 0 0;
+}
+.trading-list .assignor-box .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.trading-list .assignor-box .meta-label{
+    margin-left: 20px;
+}
+.trading-list .assignor-box .warning{
+    text-align: right;
+    color:#fe8268;
+}

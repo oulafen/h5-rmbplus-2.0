@@ -1,0 +1,234 @@
+.article-box{
+    padding-top: 30px;
+    background-color: #fff;
+}
+.article-box .title-box{
+    border-bottom: 1px #ddd solid;
+}
+.article-box .title{
+    font-size: 24px;
+}
+.article-box .metas{
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+.article-box .desc , .article-box .labels-box, .article-box .share-box .desc-label{
+    font-size: 12px;
+}
+.article-box .desc{
+    margin: 15px 0 5px;
+}
+.article-box .labels-box{
+    float: left;
+}
+.article-box .hot-labels{
+    text-align: right;
+    width: 100%;
+}
+.article-box .desc, .article-box .labels-box .label-desc{
+    color: #666;
+}
+.article-box .share-box{
+    width: 173px;
+    float: right;
+    margin-right: -5px;
+}
+.article-box .share-box .weixin-img{
+    margin: 40px 0 0 -45px;
+}
+.article-box .share-box .bds_weixin:hover .weixin-img{
+    display: block;
+}
+.article-box .labels-box .label-box{
+    padding: 2px 10px;
+    border: 1px solid #2da3dc;
+    border-radius: 4px;
+    margin-right: 5px;
+    color: #2da3dc;
+}
+.article-box .labels-box .label-box:last-child{
+    margin-right: 0px;
+}
+.article-box .article-detail{
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.article-box ul{
+    margin: 0;
+    padding: 0;
+}
+.focus-article-lists ul li{
+    list-style: none;
+    text-align: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.focus-article-lists ul > li:last-child{
+    border-bottom: 0;
+}
+.focus-article-lists .info-detail{
+    padding: 0;
+}
+.article-box .project-box .project-img{
+    margin: 0 0 20px 0;
+}
+.article-box .project-box img{
+    width: 100%;
+    height: 177.77px;
+}
+.article-list ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    background-color: #f3f3f3;
+    border-bottom: 0;
+    padding: 20px;
+}
+.article-list ul li:hover{
+    color:#333
+}
+.article-list .article-logo{
+    float: left;
+    margin-right: 20px;
+}
+.article-list .article-logo img{
+    width: 150px;
+    height: 100px;
+}
+.article-list .content{
+    margin-left: 170px;
+}
+.article-list .title-box .desc{
+    margin: 5px 0;
+}
+.article-list .short-desc{
+    margin: 10px 0 0;
+    line-height:20px;
+    height:40px;
+    overflow:hidden;
+}
+.article-list .title-box .title{
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1100px) {
+    body{
+        min-width: auto;
+    }
+    .container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .left-box{
+        width: 70%;
+        margin-right: 5%;
+    }
+    .right-box{
+        width: 25%;
+    }
+    .article-box .project-box img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    footer{
+        background-color: #2c343c;
+    }
+    .container{
+        padding: 0;
+    }
+    .header .navbar-nav, #user-panel, footer .footer-links{
+        display: none;
+    }
+    .header .navbar-header{
+        float: none;
+        text-align: center;
+    }
+    .left-box, .right-box{
+        width: 90%;
+        margin:0 5%;
+    }
+    .article-detail p{
+        margin-bottom: 1rem;
+    }
+    .article-box .title{
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+        font-weight: bold;
+    }
+    .info-box .lable{
+        font-size: 1.6rem;
+    }
+    .article-box .metas .col-xs-4{
+        width: 100%;
+    }
+    .article-box .col-xs-8{
+        width: 100%;
+    }
+    .article-box .hot-labels{
+        text-align: left;
+    }
+    .article-box .share-box .bds_weixin:hover .weixin-img{
+        display: none;
+    }
+    .article-box .project-box .project-img, .info-box, .article-list ul li{
+        margin: 0 0 2rem 0;
+    }
+    .article-list .title-box .title{
+        font-size: 1.6rem;
+    }
+    .article-list .article-logo img{
+        width: 15rem;
+        height: 10rem;
+    }
+    .article-list .content{
+        margin-left: 17rem;
+    }
+    .article-list ul li{
+        padding: 1rem;
+        height: 12rem;
+    }
+    .focus-article-lists ul li{
+        padding: 1rem 0;
+    }
+    .info-box{
+        padding: 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .article-list .article-logo, .article-list .article-logo img{
+        width: 100%;
+        margin: 0;
+        height: auto;
+        float: none;
+    }
+
+    .article-list ul li{
+        padding: 1rem;
+        height: auto;
+    }
+    .article-list .content{
+        margin: 1rem 0 0;
+    }
+    footer .contact{
+        display: none;
+    }
+    footer .copyright{
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+
+}
+

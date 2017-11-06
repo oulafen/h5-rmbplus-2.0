@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--优先使用IE最新版和chrome-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!--百度禁止转码-->
+    <meta content="width=1024" name="viewport">  <!--非响应式-->
+    <title>18plus</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imgareaselect.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/publish.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/imgareaselect-default.css" rel="stylesheet"/>
+    <link href="css/style2.0.css" rel="stylesheet"/>
+    <link href="css/publish.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header header-white">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="publish-index.html">项目发布</a></li>
+                <li><a href="help-index.html">新手问答</a></li>
+            </ul>
+            <div id="user-panel">
+                <div class="navbar-right unlogin J-unlogin">
+                    <a href="user-register.html" class="register">注册</a>
+                    <span>|</span>
+                    <a href="user-login.html" class="login">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="form-box publish-box gen-box">
+    <div class="container">
+        <ul class="steps-flag">
+            <a href="publish-gen-step-1.html">
+                <li class="current"><span>基本信息</span></li>
+            </a>
+            <a href="publish-gen-step-2.html">
+                <li><span>详细介绍</span></li>
+            </a>
+            <a href="publish-gen-step-3.html">
+                <li><span>融资计划</span></li>
+            </a>
+            <a href="publish-gen-step-4.html">
+                <li><span>团队成员</span></li>
+            </a>
+        </ul>
+        <form>
+            <div class="form-content">
+                <div class="row">
+                    <div class="col-xs-2 form-label">项目名称</div>
+                    <div class="col-xs-5">
+                        <input class="form-control J-name" type="text" maxlength="40" name="project[title]"
+                               placeholder="请输入2-40个字符的名称">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">公司名称</div>
+                    <div class="col-xs-5">
+                        <input class="form-control J-company" type="text" name="project[company]"
+                               placeholder="请输入2-40个字符的名称">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">项目简介</div>
+                    <div class="col-xs-5">
+                    <textarea class="form-control J-short-desc" onKeyUp="checkWordNum(this)" data-max="210"
+                              name="project[intro]"
+                              placeholder="请输入不超过210个字符的简介"></textarea>
+
+                        <div class="word-num-show">
+                            <span class="J-had-input">0</span>
+                            <span>/</span>
+                            <span class="J-max-input">210</span>
+                        </div>
+                    </div>
+                    <div class="col-xs-5 tip tip-h J-tip warning-tip">
+                        <div class="tip-box">
+                            <p class="J-tip-content">请简要介绍下您的店铺，可以突出店铺的优势，让投资人迅速了解您的店铺</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row image">
+                    <div class="col-xs-2 form-label">项目封面</div>
+                    <div class="col-xs-5">
+                        <input style="display:none" type="file" id="projectBasicImgInput" onchange="imgCrop.change(this)" data-width="540" data-height="300" data-previd="projectBasicImgPrev">
+                        <a href="javascript:void(0);" class="image-show J-upload-img-btn" id="projectBasicImgPrev" data-target="projectBasicImgInput">
+                            <div class="upload-img-box">
+                                <span>上传图片</span>
+                            </div>
+                        </a>
+                        <p class="img-desc">支持小于2M，格式为jpg、png的图片，分辨率为540*300px</p>
+                        <input type="hidden" name="pics[project]" id="pics[project]" class="J-img">
+                    </div>
+                    <div class="col-xs-5 tip tip-h J-tip warning-tip">
+                        <div class="tip-box">
+                            <p class="J-tip-content">该图片将作为众筹项目封面图展示在首页上</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="row">
+                    <div class="col-xs-2 form-label">产品阶段</div>
+                    <div class="col-xs-5">
+                        <select class="form-control" name="projectStage" >
+                            <option value="-1">--</option>
+                            <option value="0">零售</option>
+                            <option value="1">互联网</option>
+                            <option value="2">通信</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">收入状况</div>
+                    <div class="col-xs-5">
+                        <select class="form-control" name="income" >
+                            <option value="-1">--</option>
+                            <option value="0">零售</option>
+                            <option value="1">互联网</option>
+                            <option value="2">通信</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">融资阶段</div>
+                    <div class="col-xs-5">
+                        <select class="form-control" name="financingStage" >
+                            <option value="-1">--</option>
+                            <option value="0">零售</option>
+                            <option value="1">互联网</option>
+                            <option value="2">通信</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">所在城市</div>
+                    <div class="col-xs-5">
+                        <input type="text" name="city" class="form-control" >
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">所属领域</div>
+                    <div class="col-xs-10 field J-field">
+                        <!--{loop $area_list $area}-->
+                        <!--<label><a href="javascript:void(0);" class="status-flag  &lt;!&ndash;{if isset($area_ids[$area['id']])}&ndash;&gt;select&lt;!&ndash;{/if}&ndash;&gt;" type="checkbox" data-id="{$area['id']}"></a>{$area['name']}</label>-->
+                        <!--{/loop}-->
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>电子商务</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>社交网络</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>广告营销</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>游戏动漫</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>智能硬件</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>传媒娱乐</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>工具软件</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>消费生活</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>医疗健康</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>企业服务</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>旅游户外</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>数据服务</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>文化艺术</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>教育培训</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>汽车交通</label>
+                        <label><a href="javascript:void(0);" class="status-flag" type="checkbox"></a>其他</label>
+                        <input type="hidden" name="area_ids" id="area_ids">
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="row">
+                    <div class="col-xs-2 form-label">官方网站</div>
+                    <div class="col-xs-5">
+                        <input type="text" name="website" class="form-control">
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">官方微博</div>
+                    <div class="col-xs-5">
+                        <input type="text" name="weibo" class="form-control">
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">微信公众号</div>
+                    <div class="col-xs-10">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <input type="text" name="weixin" class="form-control">
+                            </div>
+                            <div class="col-xs-6 tip J-tip">
+                                <div class="optional">
+                                    可选项
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row no-m">
+                            <div class="col-xs-6" >
+                                <input style="display:none" type="file" id="projectWeixinImgInput" onchange="imgCrop.change(this)" data-width="344" data-height="344" data-previd="projectWeixinImgPrev">
+                                <a href="javascript:void(0);" class="image-show J-upload-img-btn" id="projectWeixinImgPrev" data-target="projectWeixinImgInput">
+                                    <div class="upload-img-box">
+                                        <span>上传二维码</span>
+                                    </div>
+                                </a>
+                                <p class="img-desc">支持小于2M，格式为jpg、png的图片，分辨率为344*344px</p>
+                            </div>
+                            <div class="col-xs-6 tip tip-h J-tip warning-tip">
+                                <div class="tip-box">
+                                    <p class="J-tip-content">若填写公众号则必须上传二维码</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">iOS APP地址</div>
+                    <div class="col-xs-5">
+                        <input type="text" name="iOSApp" class="form-control">
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">安卓 APP地址</div>
+                    <div class="col-xs-5">
+                        <input type="text" name="androidApp" class="form-control">
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="optional">
+                            可选项
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="row">
+                    <div class="col-xs-2 form-label">联系人手机</div>
+                    <div class="col-xs-5">
+                        <input class="form-control"type="text" name="phone" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">联系人邮箱</div>
+                    <div class="col-xs-5">
+                        <input class="form-control" type="text" name="email" >
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="btn-box">
+                    <a href="publish-index.html" class="btn pre-btn">上一步</a>
+                    <input type="submit" value="保存，下一步" class="btn next-btn">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade crop-modal J-crop-modal" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image-box">
+                    <p><img></p>
+                </div>
+                <div class="preview-box" style="width:150px;">
+                    <img>
+                </div>
+                <canvas class="J-canvas" style="overflow:hidden; display:none"></canvas>
+            </div>
+            <div class="crop-btns">
+                <a href="javascript:void(0);" class="btn confirm-btn J-confirm-btn" onclick="imgCrop.confirm()">确定</a>
+                <a href="javascript:void(0);" class="btn cancel-btn"  onclick="imgCrop.cancel()">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="back2top">
+        <a href="javascript:void(0);"></a>
+    </div>
+    <div class="footer-links">
+        <p>
+            <a href="help-index.html" target="_blank" class="link">帮助中心</a>
+            <a href="help-index.html" target="_blank" class="link">商务合作</a>
+            <a href="help-index.html" target="_blank" class="link">免责声明</a>
+            <a href="help-index.html" target="_blank" class="link">关于我们</a>
+        </p>
+    </div>
+
+    <div class="contact">
+        <p>
+            <span class="contact-weixin">
+                <span class="contact-icon weixin-icon"></span>
+                微信
+                <img class="weixin-img" src="images/foooter-weixin-img.jpg" alt="">
+            </span>
+            <span class="contact-phone">
+                <span class="contact-icon phone-icon"></span>
+                010-57199511
+            </span>
+            <span class="contact-email">
+                <span class="contact-icon email-icon"></span>
+                SERVICE@18PLUS.COM.CN
+            </span>
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright©2015北京无花果科技咨询有限公司 版权所有 京ICP备15048912号-1</p>
+    </div>
+</footer>
+</body>
+</html>

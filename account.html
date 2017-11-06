@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--优先使用IE最新版和chrome-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!--百度禁止转码-->
+    <meta content="width=1024" name="viewport">  <!--非响应式-->
+    <title>18plus</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--[if IE]>
+        <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/account.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style2.0.css"/>
+    <link rel="stylesheet" type="text/css" href="css/account.css"/>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <a class="logo" href="index.html"><img src="images/logo.png"></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="publish-index.html">项目发布</a></li>
+                    <li><a href="q-a.html">新手问答</a></li>
+                    <li><a href="equity-trading.html">股权交易</a></li>
+                </ul>
+                
+                <div class="navbar-right unlogin J-unlogin">
+                    <a href="javascript:void;" class="register J-register">注册</a>
+                    <span>/</span>
+                    <a href="javascript:void;" class="login J-login">登录</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container C-account">
+        <div class="nav-box">
+            <ul class="nav nav-tabs" id="accountTab"> 
+              <li class="J-accountBasicInfo active"><a href="#accountBasicInfo">个人信息</a></li> 
+              <li class="J-accountInvestment"><a href="#accountInvestment">投资的项目</a></li> 
+              <li class="J-accountFinancing"><a href="#accountFinancing">融资的项目</a></li> 
+              <li class="J-accountNews"><a href="#accountNews">消息通知</a></li> 
+              <li class="J-accountPassword"><a href="#accountPassword">修改密码</a></li> 
+            </ul>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane active" id="accountBasicInfo">
+                <!-- if 未认证投资人 -->
+                <div class="J-not-invested">
+                    <div class="show-box">
+                        <div class="head-icon-box">
+                            <img class="J-head-icon" src="images/user-head-default.png" alt="">
+                        </div>
+                        <div class="content-show-box">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <span class="title J-title">沧海教主</span>
+                                    <span class="status uncertified">未认证</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">手机</div>
+                                <div class="col-xs-8 J-phone-num">
+                                   18600221347
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">邮箱</div>
+                                <div class="col-xs-8 J-email">
+                                   jiangnan@18plus.com.cn
+                                </div>
+                            </div>
+                            <div class="row C-J-certify-investor">
+                                <a href="investor-certification.html" class="btn">认证投资人</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- endif -->
+
+                <!--if 已认证投资人 -->
+                <div class="J-is-invested">
+                    <div class="show-box">
+                        <div class="head-icon-box">
+                            <img class="J-head-icon" src="images/user-head-default.png" alt="">
+                        </div>
+                        <div class="content-show-box">
+                            <div class="row">
+                                <div class="col-xs-10">
+                                    <span class="title J-title">沧海教主</span>
+                                    <span class="status certified">已认证</span>
+                                </div>
+                                <div class="col-xs-2">
+                                    <div href="javascript:void;" class="edit-btn J-edit-btn"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">真实姓名</div>
+                                <div class="col-xs-8 J-real-name">
+                                   姜楠
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">手机</div>
+                                <div class="col-xs-8 J-phone-num">
+                                   18600221347
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">邮箱</div>
+                                <div class="col-xs-8 J-email">
+                                   jiangnan@18plus.com.cn
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">所在城市</div>
+                                <div class="col-xs-8 J-city">
+                                   北京
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">公司</div>
+                                <div class="col-xs-8 J-company">
+                                   北京无花果科技咨询邮箱公司
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">职位</div>
+                                <div class="col-xs-8 J-position">
+                                   产品总监
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">关注城市</div>
+                                <div class="col-xs-8 J-focus-cities">
+                                   <span>北京</span>
+                                   <span>上海</span>
+                                   <span>深圳</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">关注领域</div>
+                                <div class="col-xs-8 J-focus-fields">
+                                   <span>传媒娱乐</span>
+                                   <span>旅游户外</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edit-box">
+                        <div class="head-icon-box">
+                            <img class="J-head-icon" src="images/user-head-default.png" alt="">
+                            <input type="file" style="display:none" onchange="cropImg(this)">
+                            <input type="button" value="上传头像" class="btn C-J-upload-logo">
+                        </div>
+                        <div class="content-edit-box">
+                            <div class="row">
+                                <div class="col-xs-2 label">真实姓名</div>
+                                <div class="col-xs-8">
+                                   <input type="text" maxlength="16" class="form-control J-real-name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">手机</div>
+                                <div class="col-xs-8">
+                                   <input type="text" maxlength="11" class="form-control J-phone-num" disabled="disabled">
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">邮箱</div>
+                                <div class="col-xs-8">
+                                   <input type="email" class="form-control J-email" disabled="disabled">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">所在城市</div>
+                                <div class="col-xs-8">
+                                   <input type="text" class="form-control J-city">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">公司</div>
+                                <div class="col-xs-8">
+                                   <input type="text" class="form-control J-company">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-2 label">职位</div>
+                                <div class="col-xs-8">
+                                   <input type="text" class="form-control J-position">
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-xs-2 label">关注城市</div>
+                                <div class="col-xs-10 focus-cities J-focus-cities">
+                                    <input type="text" class="form-control J-focus-cities-input" placeholder="输入其他">
+                                    
+                                </div>
+                            </div>
+                            <div class="row m-b-10">
+                                <div class="col-xs-2 label">关注领域</div>
+                                <div class="col-xs-10 J-focus-fields">
+                                   <div class="field-box"><a href="javascript:void" class="status-flag" alt="电子商务"></a><span>电子商务</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="社交网络"></a><span>社交网络</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="广告营销"></a><span>广告营销</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="智能硬件"></a><span>智能硬件</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="传媒娱乐"></a><span>传媒娱乐</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="工具软件"></a><span>工具软件</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="消费生活"></a><span>消费生活</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="医疗健康"></a><span>医疗健康</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="企业服务"></a><span>企业服务</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="旅游户外"></a><span>旅游户外</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="数据服务"></a><span>数据服务</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="文化艺术"></a><span>文化艺术</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="教育培训"></a><span>教育培训</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="汽车交通"></a><span>汽车交通</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="房产家居"></a><span>房产家居</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="能源环保"></a><span>能源环保</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="体育运动"></a><span>体育运动</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="生物科学"></a><span>生物科学</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="金融"></a><span>金融</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="餐饮"></a><span>餐饮</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="物流"></a><span>物流</span></div>
+                                    <div class="field-box"><a href="javascript:void" class="status-flag" alt="其他"></a><span>其他</span></div>
+                                </div>
+                            </div>
+                            <div class="error-box"></div>
+                            <div class="row btn-box">
+                                <div class="col-xs-3"><a href="javascript:void;" class="btn C-J-save-btn">保存</a></div>
+                                <div class="col-xs-3"><a href="javascript:void;" class="btn C-J-cancel-btn">取消</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- endif -->
+
+            <div class="modal fade C-J-crop-modal" id="myCropHeadIconModel" data-backdrop="static">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="image-box">
+                                <p><img></p>
+                            </div>
+                            <div class="preview-box">
+                                <img>
+                            </div>
+                            <canvas width="80" height="80" class="J-canvas" style="overflow:hidden; display:none"></canvas>
+                        </div>
+                        <div class="C-crop-btns">
+                            <a href="javascript:void;"  class="btn C-J-confirm">确定</a>
+                            <a href="javascript:void;" data-dismiss="modal" class="btn C-J-cancel">取消</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+            <div class="tab-pane" id="accountInvestment">
+                <ul class="no-padding-margin">
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>
+                            
+                            <div class="status ongoing"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 30%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">10 万</p>
+                                        <p class="desc">您的投资</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">3.33%</p>
+                                        <p class="desc">占股</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">10 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-C-withdrawal">后悔了，撤资</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>    
+                            <div class="status succeed"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 100%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">10 万</p>
+                                        <p class="desc">您的投资</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">3.33%</p>
+                                        <p class="desc">占股</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">0 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-static-waiting-btn">静待交割</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>
+                            <div class="status failed"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 30%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">10 万</p>
+                                        <p class="desc">您的投资</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">3.33%</p>
+                                        <p class="desc">占股</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">10 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-static-waiting-btn">静待交割</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="accountFinancing">
+                <ul class="no-padding-margin">
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>
+                            <div class="status financing"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 30%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">27万</p>
+                                        <p class="desc">已筹集</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">24位</p>
+                                        <p class="desc">投资者</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">10 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-cancel-btn">取消融资</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>
+                            <div class="status preheating"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 30%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">27万</p>
+                                        <p class="desc">已筹集</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">24位</p>
+                                        <p class="desc">投资者</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">10 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-continue-btn">继续融资</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title-box">
+                            <a href="project-detail.html">
+                                <h1 class="title">
+                                    风味主题餐厅
+                                </h1>
+                            </a>
+                            <div class="status draft"></div>
+                        </div>
+                        <div class="status-box">
+                            <div class="state-line-box">
+                                <div class="state-line" style="width: 30%"></div>
+                            </div>
+                            <div class="state-desc">
+                                <ul>
+                                    <li>
+                                        <p class="num">27万</p>
+                                        <p class="desc">已筹集</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">24位</p>
+                                        <p class="desc">投资者</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">10 天</p>
+                                        <p class="desc">剩余时间</p>
+                                    </li>
+                                    <li>
+                                        <p class="num">500 万</p>
+                                        <p class="desc">融资目标</p>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <a href="javascript:void;" class="btn C-J-continue-btn">继续融资</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="accountNews">
+                <ul class="no-padding-margin">
+                    <li>
+                        <div class="unread"></div>
+                        <div class="content">
+                            你的投资人认证申请已通过审核，现在你可以查看项目详情并对融资的项目提交投资意见你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融
+                        </div>
+                        <p class="time">
+                            2015-06-11 12:28:30
+                        </p>
+                    </li>
+                    <li>
+                        <div class="unread"></div>
+                        <div class="content">
+                            抱歉，您的伪天使投资没有通过认证，申请已通过审核，现在你可以查看项目详情并对融资的项目提交投资意见你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融
+                        </div>
+                        <p class="time">
+                            2015-06-11 12:28:30
+                        </p>
+                    </li>
+                    <li>
+                        <div class="unread"></div>
+                        <div class="content">
+                            出国宝已完成天使认购阶段，现在你可以查看项目详情并对融资的项目提交投资意见你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融你可以查看项目详情并对融
+                        </div>
+                        <p class="time">
+                            2015-06-11 12:28:30
+                        </p>
+                    </li>
+                </ul>
+                <a href="javascript:void;" class="mark-all J-mark-all-news">全部显示为已读</a>
+            </div>
+            <div class="tab-pane" id="accountPassword">
+                <div class="C-account-password">
+                    <div class="head-icon-box">
+                        <img class="J-head-icon"  src="images/user-head-default.png" alt="">
+                    </div>
+                    <div class="content-show-box">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span class="title">沧海教主</span>
+                                <span class="status uncertified">未认证</span>
+                                <!-- <span class="status certified">已认证</span> -->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 label">旧密码</div>
+                            <div class="col-xs-3">
+                                <input type="password" class="form-control old-pwd">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 label">新密码</div>
+                            <div class="col-xs-3">
+                                <input type="password" class="form-control new-pwd" onchange="judgePassword(this)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 label">确认密码</div>
+                            <div class="col-xs-3">
+                                <input type="password" class="form-control new-pwd-confirm" onchange="judgeChangePasswordConfirm(this)">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <a href="javascript:void;" class="btn C-J-confirm-btn">确认修改</a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="modal fade" id="alertImgModel">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="back2top">
+            <a href="javascript:void;"></a>
+        </div>
+        <div class="footer-links">
+            <p>
+                <a href="" class="link">帮助中心</a>
+                <a href="" class="link">商务合作</a>
+                <a href="" class="link">免责声明</a>
+            </p>
+        </div>
+        <p class="copyright">Copyright©2012-2015北京无花果科技咨询有限公司 版权所有 京ICP备13025672号</p>
+        <p class="copyright">京ICP备12031756号·京公网安备11010802012285号·京网文2012【92850 】</p>
+
+    </footer>
+</body>
+</html>

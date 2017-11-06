@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> <!--优先使用IE最新版和chrome-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"> <!--百度禁止转码-->
+    <meta content="width=1024" name="viewport">  <!--非响应式-->
+    <title>18plus</title>
+    <link rel="icon" href="images/favicon.ico">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.imgareaselect.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/circle-progress.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/publish.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/imgareaselect-default.css" rel="stylesheet"/>
+    <link href="css/style2.0.css" rel="stylesheet"/>
+    <link href="css/publish.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="header header-white">
+    <div class="container">
+        <nav class="navbar" role="navigation">
+            <div class="navbar-header">
+                <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">首页</a></li>
+                <li class="active"><a href="publish-index.html">项目发布</a></li>
+                <li><a href="help-index.html">新手问答</a></li>
+            </ul>
+            <div id="user-panel">
+                <div class="navbar-right unlogin J-unlogin">
+                    <a href="user-register.html" class="register">注册</a>
+                    <span>|</span>
+                    <a href="user-login.html" class="login">登录</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="form-box publish-box gen-box">
+    <div class="container">
+        <ul class="steps-flag">
+            <a href="publish-gen-step-1.html">
+                <li class="passed"><span>基本信息</span></li>
+            </a>
+            <a href="publish-gen-step-2.html">
+                <li class="passed"><span>详细介绍</span></li>
+            </a>
+            <a href="publish-gen-step-3.html">
+                <li class="passed"><span>融资计划</span></li>
+            </a>
+            <a href="publish-gen-step-4.html">
+                <li class="current"><span>团队成员</span></li>
+            </a>
+        </ul>
+        <form>
+            <div class="form-content">
+                <div class="J-members-box">
+                    <div class="block-box J-member-box">
+                        <a href="javascript:void(0);" class="delete-btn J-delete-member-btn" title="删除">&times;</a>
+                        <div class="row">
+                            <div class="col-xs-2 form-label">成员姓名</div>
+                            <div class="col-xs-5">
+                                <input class="form-control" type="text" name="" >
+                            </div>
+                            <div class="col-xs-5 tip J-tip">
+                                <div class="tip-box">
+                                    <p class="J-tip-content"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 form-label">成员职位</div>
+                            <div class="col-xs-5">
+                                <input class="form-control" type="text" name="" >
+                            </div>
+                            <div class="col-xs-5 tip J-tip">
+                                <div class="tip-box">
+                                    <p class="J-tip-content"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 form-label">个人简介</div>
+                            <div class="col-xs-5">
+                                <textarea class="form-control" name="" ></textarea>
+                            </div>
+                            <div class="col-xs-5 tip tip-h J-tip ">
+                                <div class="tip-box">
+                                    <p class="J-tip-content"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row image">
+                            <div class="col-xs-2 form-label">个人头像</div>
+                            <div class="col-xs-5">
+                                <input style="display:none" type="file" class="J-img-input" id="memberImgInput" onchange="imgCrop.change(this)" data-width="380" data-height="380" data-previd="memberImgPrev">
+                                <a href="javascript:void(0);" class="image-show J-upload-img-btn" id="memberImgPrev" data-target="memberImgInput">
+                                    <div class="upload-img-box">
+                                        <span>上传图片</span>
+                                    </div>
+                                </a>
+                                <p class="img-desc">支持小于2M，格式为jpg、png的图片，分辨率为540*300px</p>
+                                <input type="hidden">
+                            </div>
+                            <div class="col-xs-5 tip tip-h J-tip">
+                                <div class="tip-box">
+                                    <p class="J-tip-content"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row add-box">
+                    <a href="javascript:void(0);" class="add-btn J-add-member-btn">
+                        <span>添加成员</span>
+                    </a>
+                </div>
+                <hr class="divider" />
+                <div class="btn-box three-btns-box">
+                    <a href="publish-gen-step-3.html" class="btn pre-btn">上一步</a>
+                    <a href="publish-gen-step-4.html" class="btn mid-btn">保存草稿</a>
+                    <a href="publish-gen-step-4.html" class="btn next-btn">提交审核</a>
+                </div>
+            </div>
+        </form>
+
+        <script type="tpl" id="memberTpl">
+            <div class="block-box J-member-box">
+                <a href="javascript:void(0);" class="delete-btn J-delete-member-btn" title="删除">&times;</a>
+                <div class="row">
+                    <div class="col-xs-2 form-label">成员姓名</div>
+                    <div class="col-xs-5">
+                        <input class="form-control" type="text" name="" >
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="tip-box">
+                            <p class="J-tip-content"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">成员职位</div>
+                    <div class="col-xs-5">
+                        <input class="form-control" type="text" name="" >
+                    </div>
+                    <div class="col-xs-5 tip J-tip">
+                        <div class="tip-box">
+                            <p class="J-tip-content"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2 form-label">个人简介</div>
+                    <div class="col-xs-5">
+                        <textarea class="form-control" name="" ></textarea>
+                    </div>
+                    <div class="col-xs-5 tip tip-h J-tip ">
+                        <div class="tip-box">
+                            <p class="J-tip-content"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row image">
+                    <div class="col-xs-2 form-label">个人头像</div>
+                    <div class="col-xs-5">
+                        <input style="display:none" type="file" class="J-img-input" id="memberImgInput" onchange="imgCrop.change(this)" data-width="380" data-height="380" data-previd="memberImgPrev">
+                        <a href="javascript:void(0);" class="image-show J-upload-img-btn" id="memberImgPrev" data-target="memberImgInput">
+                            <div class="upload-img-box">
+                                <span>上传图片</span>
+                            </div>
+                        </a>
+                        <p class="img-desc">支持小于2M，格式为jpg、png的图片，分辨率为540*300px</p>
+                        <input type="hidden">
+                    </div>
+                    <div class="col-xs-5 tip tip-h J-tip">
+                        <div class="tip-box">
+                            <p class="J-tip-content"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+    </div>
+</div>
+
+<div class="modal fade crop-modal J-crop-modal" data-backdrop="static">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="image-box">
+                    <p><img></p>
+                </div>
+                <div class="preview-box" style="width:150px;">
+                    <img>
+                </div>
+                <canvas class="J-canvas" style="overflow:hidden; display:none"></canvas>
+            </div>
+            <div class="crop-btns">
+                <a href="javascript:void(0);" class="btn confirm-btn J-confirm-btn" onclick="imgCrop.confirm()">确定</a>
+                <a href="javascript:void(0);" class="btn cancel-btn"  onclick="imgCrop.cancel()">取消</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div id="back2top">
+        <a href="javascript:void(0);"></a>
+    </div>
+    <div class="footer-links">
+        <p>
+            <a href="help-index.html" target="_blank" class="link">帮助中心</a>
+            <a href="help-index.html" target="_blank" class="link">商务合作</a>
+            <a href="help-index.html" target="_blank" class="link">免责声明</a>
+            <a href="help-index.html" target="_blank" class="link">关于我们</a>
+        </p>
+    </div>
+
+    <div class="contact">
+        <p>
+            <span class="contact-weixin">
+                <span class="contact-icon weixin-icon"></span>
+                微信
+                <img class="weixin-img" src="images/foooter-weixin-img.jpg" alt="">
+            </span>
+            <span class="contact-phone">
+                <span class="contact-icon phone-icon"></span>
+                010-57199511
+            </span>
+            <span class="contact-email">
+                <span class="contact-icon email-icon"></span>
+                SERVICE@18PLUS.COM.CN
+            </span>
+        </p>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright©2015北京无花果科技咨询有限公司 版权所有 京ICP备15048912号-1</p>
+    </div>
+</footer>
+</body>
+</html>

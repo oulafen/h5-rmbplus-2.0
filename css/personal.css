@@ -1,0 +1,159 @@
+
+.personal-top{
+    background: url(../images/personal/content-top-bg.jpg) 50% 50% no-repeat;
+    height: 315px;
+    padding-top: 65px;
+}
+.personal-top .icon-box{
+    width: 120px;
+}
+.personal-top .icon-box img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.personal-top .icon-box .verified-box{
+    width: 100px;
+    margin: 20px auto;
+    border: 1px solid #2da3dc;
+    border-radius: 5px;
+    color: #2da3dc;
+    text-align: center;
+    line-height: 25px;
+}
+.personal-top .icon-box .verified-box span:before{
+    content:'';
+    background: url(../images/personal/icon-model.png) center center no-repeat;
+    padding: 1px 7px;
+    margin-right: 10px;
+}
+.personal-top .metas p{
+    line-height: 30px;
+    margin: 20px;
+    font-size: 16px;
+}
+.personal-top .metas a{
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+    cursor: default;
+}
+.personal-top .metas a:before{
+    content:'';
+    padding: 1px 7px;
+    margin-right: 20px;
+}
+.personal-top .metas a.user:before{
+    background: url(../images/personal/icon-user.png) center center no-repeat;
+    padding: 4px 15px;
+}
+.personal-top .metas a.city:before{
+    background: url(../images/personal/icon-city.png) center center no-repeat;
+    padding: 3px 10px;
+}
+.personal-top .metas a.id:before{
+    background: url(../images/personal/id-icon.png) center center no-repeat;
+    padding: 3px 14px;
+}
+.personal-top .metas a.area:before{
+    background: url(../images/personal/icon-area.png) center center no-repeat;
+    padding: 3px 12px;
+}
+.personal-top .metas a.field:before{
+    background: url(../images/personal/icon-field.png) center center no-repeat;
+    padding: 2px 12px;
+}
+.personal-top .metas a span{
+    padding: 3.5px 10px;
+    border: 1px solid #2da3dc;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.personal-top .metas a.id span{
+    padding:0 5px;
+    border: none;
+    margin: 0;
+}
+.personal-top .fans-box{
+    width: 235px;
+    float: right;
+    text-align: center;
+    padding-top: 24px;
+    font-size: 16px;
+}
+.personal-top .fans-box .btn span:before{
+    content: '';
+    background: url(../images/personal/icon-eye.png) center center no-repeat;
+    padding: 0 17px;
+    margin-right: 10px;
+}
+.personal-top .fans-box .f-l, .personal-top .fans-box .f-r{
+    width: 80px;
+    color: #fff;
+}
+.personal-top .fans-box .col-xs-6:first-child{
+    border-right: 1px solid #999;
+}
+.personal-top .fans-box .btn-box{
+    padding: 26px 20px 0;
+}
+.personal-top .fans-box .num{
+    font-size: 33px;
+    font-weight: bold;
+    color: #2da3dc;
+    margin-bottom: 10px;
+    line-height: 26px;
+    width: 120px;
+    margin-left: -20px;
+}
+.personal-modal .modal-dialog{
+    width: 650px;
+}
+.personal-modal .focus-lists{
+    margin-bottom: 30px;
+}
+.personal-modal .focus-lists .row:nth-child(even){
+    background-color: #fff;
+}
+.personal-modal .focus-lists .row:nth-child(odd){
+    background-color: #f6f6f6;
+}
+.personal-modal .focus-lists .col-xs-6{
+    padding:30px;
+}
+.personal-modal .focus-lists .icon{
+    float: left;
+}
+.personal-modal .focus-lists img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.personal-modal .focus-lists .desc{
+    padding-left: 130px;
+}
+.personal-modal .focus-lists .name{
+    color: #2da3dc;
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+.personal-modal .focus-lists .btn{
+    margin-top: 10px;
+    background-color: #fff;
+    border: 1px solid #2da3dc;
+    color: #2da3dc;
+    line-height: 35px;
+    height: 35px;
+    font-size: 14px;
+    width: 110px;
+}
+
+.detail-content{
+    padding-bottom: 10px;
+}
+.tab-content .tab-pane{
+    margin-top: 30px;
+}
+.project-lists{
+    padding: 0;
+}
